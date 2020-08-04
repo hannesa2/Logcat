@@ -6,11 +6,11 @@ interface IAnalytics {
 
     fun isInitialized(): Boolean
 
-    fun recordEvent(event: String)
+    fun recordEvent(event: String, vararg args: Any?)
 
-    fun recordWarning(message: String)
+    fun recordWarning(message: String, vararg args: Any?)
 
-    fun recordError(message: String)
+    fun recordError(message: String, vararg args: Any?)
 
     fun recordError(throwable: Throwable)
 
